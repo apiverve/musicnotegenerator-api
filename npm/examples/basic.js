@@ -17,7 +17,7 @@ const api = new musicnotegeneratorAPI({
 var query = {
   note: "C",
   octave: 4,
-  duration: 1.0
+  duration: 1
 };
 
 // Make the API request using callback
