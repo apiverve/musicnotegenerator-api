@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_musicnotegenerator',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='Music Note Generator creates high-quality WAV audio files of musical notes with precise frequency generation and customizable duration.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/musicnotegenerator',
-        'Source': 'https://github.com/apiverve/musicnotegenerator-api',
-        'Bug Tracker': 'https://github.com/apiverve/musicnotegenerator-api/issues'
-    },
+    url='https://apiverve.com/marketplace/musicnotegenerator?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
