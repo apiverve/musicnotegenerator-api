@@ -12,21 +12,18 @@ namespace APIVerve.API.MusicNoteGenerator
     {
         /// <summary>
         /// Musical note (A-G with optional # or b)
-        /// Example: C
         /// </summary>
         [JsonProperty("note")]
         public string Note { get; set; }
 
         /// <summary>
-        /// Octave number (0-8)
-        /// Example: 4
+        /// Octave number
         /// </summary>
         [JsonProperty("octave")]
         public string Octave { get; set; }
 
         /// <summary>
-        /// Duration in seconds (0.1-10)
-        /// Example: 1.0
+        /// Duration in seconds
         /// </summary>
         [JsonProperty("duration")]
         public string Duration { get; set; }
