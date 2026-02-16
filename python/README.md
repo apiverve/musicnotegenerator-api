@@ -44,7 +44,11 @@ from apiverve_musicnotegenerator.apiClient import MusicnotegeneratorAPIClient
 # Initialize the client with your APIVerve API key
 api = MusicnotegeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "note": "C", "octave": 4, "duration": 1 }
+query = {
+    "note": "C",
+    "octave": 4,
+    "duration": 1
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "note": "C", "octave": 4, "duration": 1 }
+query = {
+    "note": "C",
+    "octave": 4,
+    "duration": 1
+}
 ```
 
 ###### Simple Request
@@ -132,7 +140,11 @@ from apiverve_musicnotegenerator.apiClient import MusicnotegeneratorAPIClient, M
 
 api = MusicnotegeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "note": "C", "octave": 4, "duration": 1 }
+query = {
+    "note": "C",
+    "octave": 4,
+    "duration": 1
+}
 
 try:
     result = api.execute(query)
@@ -153,7 +165,11 @@ from apiverve_musicnotegenerator.apiClient import MusicnotegeneratorAPIClient, M
 
 api = MusicnotegeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "note": "C", "octave": 4, "duration": 1 }
+query = {
+    "note": "C",
+    "octave": 4,
+    "duration": 1
+}
 
 try:
     result = api.execute(query)
@@ -187,7 +203,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_musicnotegenerator.apiClient import MusicnotegeneratorAPIClient, MusicnotegeneratorAPIClientError
 
-query = { "note": "C", "octave": 4, "duration": 1 }
+query = {
+    "note": "C",
+    "octave": 4,
+    "duration": 1
+}
 
 # Using context manager ensures proper cleanup
 with MusicnotegeneratorAPIClient("[YOUR_API_KEY]") as api:
@@ -213,7 +233,11 @@ from apiverve_musicnotegenerator.apiClient import MusicnotegeneratorAPIClient
 # Enable debug mode
 api = MusicnotegeneratorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "note": "C", "octave": 4, "duration": 1 }
+query = {
+    "note": "C",
+    "octave": 4,
+    "duration": 1
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -228,8 +252,13 @@ from apiverve_musicnotegenerator.apiClient import MusicnotegeneratorAPIClient
 
 api = MusicnotegeneratorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "note": "C",
+    "octave": 4,
+    "duration": 1
+}
+
 try:
-    query = { "note": "C", "octave": 4, "duration": 1 }
     result = api.execute(query)
     print(result)
 finally:
