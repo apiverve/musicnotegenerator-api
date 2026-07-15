@@ -17,11 +17,14 @@ def call_musicnotegenerator_api():
     Make a GET request to the Music Note Generator API
     """
     try:
+        # Query parameters
+        params &#x3D; {&#x27;note&#x27;: &#x27;C&#x27;, &#x27;octave&#x27;: 4}
+
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.get(API_URL, headers=headers, params=params)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
