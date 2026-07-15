@@ -30,7 +30,12 @@ The Music Note Generator API provides a simple, reliable way to integrate music 
 ```javascript
 async function callMusicNoteGeneratorAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/musicnotegenerator', {
+        const params = new URLSearchParams({
+            note: 'C',
+            octave: 4
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/musicnotegenerator?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +55,7 @@ callMusicNoteGeneratorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/musicnotegenerator?param=value" \
+curl -X GET "https://api.apiverve.com/v1/musicnotegenerator?note=C&octave=4" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +155,7 @@ go get github.com/apiverve/musicnotegenerator-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +174,7 @@ go get github.com/apiverve/musicnotegenerator-api/go
 The Music Note Generator API is commonly used for:
 
 - **Web Applications** - Add music note generator features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with music note generator capabilities
 - **Data Pipelines** - Process and analyze data at scale
