@@ -4,30 +4,42 @@ declare module '@apiverve/musicnotegenerator' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface musicnotegeneratorResponse {
     status: string;
     error: string | null;
     data: MusicNoteGeneratorData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface MusicNoteGeneratorData {
-      note:      string;
-      octave:    number;
-      frequency: number;
-      duration:  number;
+      note:      null | string;
+      octave:    number | null;
+      frequency: number | null;
+      duration:  number | null;
       audio:     Audio;
   }
   
   interface Audio {
-      audioFile:   string;
-      format:      string;
-      downloadURL: string;
-      duration:    string;
-      sampleRate:  string;
-      bitDepth:    string;
-      expires:     number;
+      audioFile:   null | string;
+      format:      null | string;
+      downloadURL: null | string;
+      duration:    null | string;
+      sampleRate:  null | string;
+      bitDepth:    null | string;
+      expires:     number | null;
   }
 
   export default class musicnotegeneratorWrapper {
