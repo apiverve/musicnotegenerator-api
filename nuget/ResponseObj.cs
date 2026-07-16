@@ -25,6 +25,9 @@ namespace APIVerve.API.MusicNoteGenerator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,13 +36,13 @@ namespace APIVerve.API.MusicNoteGenerator
         public string Note { get; set; }
 
         [JsonProperty("octave")]
-        public long Octave { get; set; }
+        public long? Octave { get; set; }
 
         [JsonProperty("frequency")]
-        public double Frequency { get; set; }
+        public double? Frequency { get; set; }
 
         [JsonProperty("duration")]
-        public long Duration { get; set; }
+        public long? Duration { get; set; }
 
         [JsonProperty("audio")]
         public Audio Audio { get; set; }
@@ -66,6 +69,18 @@ namespace APIVerve.API.MusicNoteGenerator
         public string BitDepth { get; set; }
 
         [JsonProperty("expires")]
-        public long Expires { get; set; }
+        public long? Expires { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
