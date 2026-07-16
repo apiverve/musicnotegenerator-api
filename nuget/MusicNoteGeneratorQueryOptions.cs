@@ -20,12 +20,12 @@ namespace APIVerve.API.MusicNoteGenerator
         /// Octave number
         /// </summary>
         [JsonProperty("octave")]
-        public string Octave { get; set; }
+        public int? Octave { get; set; }
 
         /// <summary>
         /// Duration in seconds
         /// </summary>
         [JsonProperty("duration")]
-        public string Duration { get; set; }
+        public double? Duration { get; set; }
     }
 }
