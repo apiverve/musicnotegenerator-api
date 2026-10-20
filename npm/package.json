@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/musicnotegenerator",
-  "version": "1.2.0",
-  "description": "Music Note Generator creates high-quality WAV audio files of musical notes with precise frequency generation and customizable duration.",
+  "version": "1.2.2",
+  "description": "Music Note Generator is a musical note generator API that creates high-quality WAV audio files of musical notes with precise frequency generation, plus customizable duration on paid plans.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "music generator", "note audio", "tone generator", "musical notes", "audio synthesis"
+    "music note generator", "musical note generator", "music note generator api", "note sound generator", "wav tone generator api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/musicnotegenerator-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/musicnotegenerator?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/musicnotegenerator?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
