@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/musicnotegenerator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Music Note Generator is a musical note generator API that creates high-quality WAV audio files of musical notes with precise frequency generation, plus customizable duration on paid plans.",
   "main": "index.js",
   "types": "index.d.ts",
