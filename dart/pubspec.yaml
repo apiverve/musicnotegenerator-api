@@ -1,6 +1,6 @@
 name: apiverve_musicnotegenerator
 description: "Music Note Generator is a musical note generator API that creates high-quality WAV audio files of musical notes with precise frequency generation, plus customizable duration on paid plans."
-version: 1.2.5
+version: 1.2.6
 homepage: https://apiverve.com/marketplace/musicnotegenerator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/musicnotegenerator-api/tree/main/dart
 
